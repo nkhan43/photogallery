@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
     <title>Photo Gallery</title>
 </head>
 <body>
@@ -10,13 +11,14 @@
         <h1>TK Photography</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+               <h3> <li><a href="#about">About</a></li></h3>
+                <h3><li><a href="#gallery">Gallery</a></li></h3>
+                <h3><li><a href="#contact">Contact</a></li></h3>
+                <li><a href="#top">Top</a></li>
             </ul>
         </nav>
     </header>
-
+<main>
     <section id="about">
         <h2>About</h2>
         <p>Hello! I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it’s taken me all over the world.</p>
@@ -76,25 +78,19 @@
             </figure>
         </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Name (Your full name)</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email (Enter your email address)</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message (What can I help you with?)</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+</main>
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <textarea id="message" name="message" placeholder="What can I help you with?" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
 
     <footer>
-        <p>Copyright 2021 TK Photography</p>
+        <p><small>Copyright 2021 TK Photography</small></p>
     </footer> 
 </body>
 </html>
